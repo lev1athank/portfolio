@@ -1,0 +1,20 @@
+[
+    {
+        "url":"https://game.leviathank.ru",
+        "nameImage": "neuralNetwork.png",
+        "namePage": "клеточный автомат",
+        "description": "строй клетку и смотри на ее развитее, меняй при этом правило жизни"
+    },
+    {
+        "url":"https://home.leviathank.ru",
+        "nameImage": "reg.png",
+        "namePage": "поле регистрации и входа",
+        "description": "Обычное поле с необычным дизайном"
+    },
+    {
+        "url":"/forArtem",
+        "nameImage": "DL.png",
+        "namePage": "Для скачки",
+        "description": "Надо будет это удалить"
+    }
+]

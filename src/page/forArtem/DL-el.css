@@ -1,0 +1,48 @@
+.DL-zone a {
+    margin-bottom: 20px;
+    display: inline-flex;
+    background-color: var(--dark);
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    height: 60px;
+    padding: 0;
+    border: 3px dashed var(--blue);
+    border-radius: inherit;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.DL-zone a:last-child {
+    margin-bottom: 0;
+}
+
+.DL-zone a:hover {
+    border: 3px solid var(--orange);
+    transform: scale(0.95);
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px;
+    position: relative;
+    height: 100vh;
+}
+
+
+
+.DL-zone {
+    font-family: 'Days One', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark);
+    width: 500px;
+    height: max-content;
+    border-radius: 15px;
+    border-left: 3px dashed var(--blue);
+    border-right: 3px dashed var(--blue);
+}
+

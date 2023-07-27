@@ -1,0 +1,93 @@
+.card {
+    text-decoration: none;
+    opacity: 0;
+    transform: scale(0);
+    animation: card;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    cursor: pointer;
+    font-family: 'Days One', sans-serif;
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-color: rgb(30, 29, 31);
+    border-radius: 15px;
+    border: 3px dashed #149bb7;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+
+    .cardName {
+        z-index: 4;
+        word-wrap: break-word;
+        position: absolute;
+        font-family: inherit;
+        top: -4%;
+        background-color: inherit;
+        padding: 2px 7px;
+        color: var(--white);
+        ;
+        border-radius: 30px;
+        border: inherit;
+        right: 20px;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+    }
+
+    &:hover {
+        border: 3px solid #149bb7;
+        .cardName {
+            top: -3px;
+            right: -3px;
+        }
+    }
+
+
+    img {
+        position: relative;
+        max-height: 80%;
+        min-height: 70%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .description {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        font-size: 1.2rem;
+        padding: 0 10px;
+        position: relative;
+        max-height: 30%;
+        min-height: 20%;
+        color: var(--white);
+        ;
+    }
+
+
+}
+
+@keyframes card {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .card {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        min-width: 80%;
+    }
+}
+
+.card:hover {
+    perspective: 100;
+}

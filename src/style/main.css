@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /*'Permanent Marker', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');  /*font-family: 'Days One', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --white: #efeef0;
+    --dark: #1e1d1f;
+    --blue: #149bb7;
+    --orange: #E57C23;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+

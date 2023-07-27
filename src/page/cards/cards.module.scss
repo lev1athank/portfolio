@@ -1,0 +1,31 @@
+.cards {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
+
+    .card { 
+
+        width: 30%;
+        height: 400px;
+        background-color: rgb(30, 29, 31);
+        border-radius: 15px;
+        border: 3px dashed #149bb7;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+
+        &:hover {
+            transform: scale(1.5);
+            box-shadow: 0px 5px 22px 2px rgba(20, 155, 183, 0.2);
+            border: 3px solid #149bb7;
+        }
+    }
+ 
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        gap: 20px;
+    }
+}
