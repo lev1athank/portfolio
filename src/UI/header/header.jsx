@@ -1,22 +1,31 @@
 import React from 'react'
-import style from './big_header.module.scss'
+import bigHeader from './Big_header.module.scss'
+import MinHeader from './Min_header.module.scss'
 import { Link } from 'react-router-dom'
 
 
-const MinHeader = () => {
+const Min_header = () => {
     return (
-        <></>
+        <header className={MinHeader.header_Min}>
+            <div className={MinHeader.headerEL}>
+                <Link className={MinHeader.about} to={'/about'}>Обо мне</Link>
+                <Link className={MinHeader.projects} to={'/'}>Проекты</Link>
+            </div>
+        </header>
+
     )
 }
-const Bigheader = () => {
+const Big_header = () => {
     return (
-        <div className={style.headerEL}>
-            <Link className={style.link}>О себе<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg></Link>
-            <div className={style.imgBG}>
-                <img src="/logo/leviathan.png" alt="img" />
+        <header className={bigHeader.header_Big}>
+            <div className={bigHeader.headerEL}>
+                <Link className={bigHeader.link} to={'/about'}>Обо мне<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg></Link>
+                <div className={bigHeader.imgBG}>
+                    <img src="/logo/leviathan.png" alt="img" />
+                </div>
+                <Link className={bigHeader.link} to={'/'}><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg>Проекты</Link>
             </div>
-            <Link className={style.link}><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" /></svg>Проекты</Link>
-        </div>
+        </header>
     )
 }
 
@@ -24,9 +33,9 @@ const Bigheader = () => {
 
 const Header = () => {
     return (
-        <header className={style.header}>
-            {window.innerWidth < 1024? <MinHeader />: <Bigheader />}
-        </header>
+        <>
+            {window.innerWidth < 1024 ? <Min_header /> : <Big_header />}
+        </>
     )
 }
 

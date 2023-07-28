@@ -1,0 +1,20 @@
+.content {
+    width: 80%;
+    height: 100vh;
+    font-family: 'Days One', sans-serif;
+    color: var(--dark);
+
+    h1 {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    div {
+        font-size: 1.4rem;
+        a {
+            text-decoration: none;
+            color: var(--lightBlue);
+        }
+    }
+}
