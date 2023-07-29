@@ -1,6 +1,6 @@
 import React from 'react'
-import bigHeader from './Big_header.module.scss'
-import MinHeader from './Min_header.module.scss'
+import bigHeader from './big_header.module.scss'
+import MinHeader from './min_header.module.scss'
 import { Link } from 'react-router-dom'
 
 
